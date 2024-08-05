@@ -3,10 +3,8 @@ about:
   template: marquee
   id: about-block
   image: "img/island.jpeg"
-  links:
-    - icon: megaphone
-      text: How to pronounce my name
-      href: https://namedrop.io/elizabethechavarria 
+
+
 ---
 
 ::: {#about-block}
@@ -23,4 +21,6 @@ I hold a B.A. in Political Science from Universidad Nacional de Colombia (2014) 
 During the Summer of 2024, I am being part of [EDICT's (Empowering Diverse Climate Talent)](https://elementalexcelerator.com/edict-internship-program/) Internship program at the [Coalition for Community Solar Access (CCSA)](https://communitysolaraccess.org/). As a Policy Data Analyst, I have been analyzing publicly available interconnection data across CCSA's priority state markets. 
 
 Please feel free to [contact me](mailto:eet1@uw.edu) if you would like to know more about my work or discuss potential collaborations.
+
+How to pronounce my name: [namedrop](https://namedrop.io/elizabethechavarria)
 
