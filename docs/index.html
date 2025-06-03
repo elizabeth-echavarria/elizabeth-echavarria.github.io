@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,10 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f034b2f7b1e3305d2d78cb9d7f6a0689.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -125,21 +125,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-about-marquee content">
+<div class="quarto-about-marquee">
   <div class="about-image-container">
     <img src="img/island.jpeg" class="about-image " style="width: 100%;">
   </div>
   <div class="about-contents">
-     <div id="about-block">
+    <header id="title-block-header" class="quarto-title-block"></header> <div id="about-block">
 </div> 
   </div>
 </div>
 
 <p>I am a third-year Political Science Ph.D.&nbsp;student at the University of Washington in Seattle interested in Environmental Politics. My research explores the political economy of critical minerals supply chain, concerning their fundamental role in the development of renewable sources of energy and enabling a just transition.</p>
-<p>I am a fellow of <a href="https://envirpol.org/">UW’s Center for Environmental Politics</a>, and I will hold the position of Graduate Chair of its Colloquium Series during the Academic Year 2024-25.</p>
+<p>I am a fellow of <a href="https://envirpol.org/">UW’s Center for Environmental Politics</a>, and I currently hold the position of Graduate Chair of its Colloquium Series during the Academic Year 2024-25.</p>
 <p>My research has been recognized with fellowships by <a href="https://www.cei.washington.edu/">UW’s Clean Energy Institute</a>, the <a href="https://csis.upenn.edu/residential-program/doctoral-fellows/">Oxford - Penn Social Impact Doctoral Program</a>, and awards by the <a href="https://www.resf-pnw.org/">Renewable Energy Scholarship Foundation</a>, and <a href="https://apsanet.org/diversity/fund-for-latino-scholarship/">APSA’s Fund for Latino Scholarship</a>.</p>
 <p>I hold a B.A. in Political Science from Universidad Nacional de Colombia (2014) and an M.Sc. in Public Policy from University College London (2019), which I completed thanks to a Chevening Scholarship funded by the British Foreign and Commonwealth Office. Before my doctoral studies, I worked as a program and project manager at various Non-Governmental Organizations in South America, where I promoted transparency and responsible practices in the extractive sector.</p>
-<p>During the Summer of 2024, I am being part of <a href="https://elementalexcelerator.com/edict-internship-program/">EDICT’s (Empowering Diverse Climate Talent)</a> Internship program at the <a href="https://communitysolaraccess.org/">Coalition for Community Solar Access (CCSA)</a>. As a Policy Data Analyst, I have been analyzing publicly available interconnection data across CCSA’s priority state markets.</p>
+<p>During the Summer of 2024, I was part of <a href="https://elementalexcelerator.com/edict-internship-program/">EDICT’s (Empowering Diverse Climate Talent)</a> Internship program at the <a href="https://communitysolaraccess.org/">Coalition for Community Solar Access (CCSA)</a>. As a Policy Data Analyst, I analyzed publicly available interconnection data across CCSA’s priority state markets.</p>
 <p>Please feel free to <a href="mailto:eet1@uw.edu">contact me</a> if you would like to know more about my work or discuss potential collaborations.</p>
 <p><a href="https://namedrop.io/elizabethechavarria">How to pronounce my name.</a></p>
 
@@ -175,18 +175,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -218,7 +207,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -226,7 +235,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -323,7 +332,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
