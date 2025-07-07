@@ -19,8 +19,6 @@ website:
     
     # your social media handles
     right:
-      - icon: twitter-x
-        href: https://x.com/eliza_bth
       - icon: linkedin
         href: https://www.linkedin.com/in/elizabethechavarria/
       - icon: envelope
