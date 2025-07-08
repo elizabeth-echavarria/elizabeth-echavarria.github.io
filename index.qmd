@@ -2,7 +2,7 @@
 about:
   template: marquee
   id: about-block
-  image: "img/island.jpeg"
+  image: "img/pic.jpg"
 
 
 ---
